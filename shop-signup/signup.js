@@ -2,7 +2,7 @@ const signupForm = document.getElementById('signupForm');
 signupForm.addEventListener("submit", function (event) {
     event.preventDefault();
     let user = { };
-    user.firstName=document.getElementById('firstname').value;
+    user.firstname=document.getElementById('firstname').value;
     user.lastname=document.getElementById('lastname').value;
     user.phone=document.getElementById('phone').value;
     user.password=document.getElementById('password').value;

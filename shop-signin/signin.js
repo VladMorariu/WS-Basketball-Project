@@ -5,6 +5,7 @@ signinForm.addEventListener("submit", function (event) {
     let password = document.getElementById('password').value;
     let retrievedObject = JSON.parse(localStorage.getItem(email));
     if (password == retrievedObject.password){
+        localStorage.setItem("loggedUser", JSON.stringify(retrievedObject));
         location.href="../shop-homepage/shop.html";
     } else {
         let message = document.getElementById('message');

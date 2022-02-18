@@ -68,6 +68,12 @@ header {
 .header-icon i:hover {
     color: darkred;
 }
+.header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
 .menu-main {
     display: flex;
     justify-content: space-evenly;
