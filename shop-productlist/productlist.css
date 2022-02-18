@@ -1,0 +1,40 @@
+.spaceleftright {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.boxes {
+    display: flex;
+
+}
+.filter {
+    border: 1px solid red;
+    width: 35%;
+    height: 100%;
+}
+
+.card {
+    border: 2px solid green;
+}
+
+.card img {
+    width: 50%;
+    height: 50%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.imagehover :hover {
+    background-color: aqua;
+}
+
+.marketing {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+}

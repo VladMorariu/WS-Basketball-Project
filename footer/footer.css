@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #F4F4F4;
+}
+img {
+    width: 100%;
+}
+/* PE TOT ECTRANUL */
+
+.imaginetest {
+    display: inline;
+    width: 330px;
+    height: 30px;
+}
+
+.containerleftright {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+li {
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: red;
+}
+
+
+/* BOTTOMFOOTER */
+
+.bottom-section {
+    margin-bottom: 15px;
+}
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+.bottom-footer li {
+    padding-right: 0;
+    text-align: center;
+}
+.bottom-footer ul {
+    padding-left: 0;
+}
+.bottom-footer form {
+    text-align: center;
+}
+.bottom-footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.bottom-footer-socialicon{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+/* SI BOTTOMFOOTER SI FOOTER */
+
+ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-main ul {
+    padding-left: 0;
+}
+.footer-company {
+    display: flex;
+    flex-direction: column;
+}
+.footer-copyright p {
+    margin-bottom: 3px;
+}

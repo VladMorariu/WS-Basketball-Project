@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    background-color: #F4F4F4;
+}
+img {
+    width: 100%;
+}
+/* PE TOT ECTRANUL */
+
+.imaginetest {
+    display: inline;
+    width: 330px;
+    height: 30px;
+}
+
+.containerleftright {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.header-logo img {
+    width: 100px;
+}
+.header-search {
+    display: flex;
+    justify-content: center;
+}
+.header-search input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid darkgray;
+    border-right: black;
+    padding: 4px 0px 4px 10px;
+    font-size: 12px;
+}
+.header-search button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.header-icon button {
+    border: none;
+    background-color: transparent;
+}
+.header-icon i {
+    font-size: 18px;
+}
+.header-icon i:hover {
+    color: darkgray;
+}
+.menu-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+li {
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: red;
+}
+
+
+/* ICON SERVICII */
+
+.trust {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.trust-box {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.trust-box p {
+    margin-left: 10px;
+}
+
+.trust-box div {
+    display: flex;
+    align-items: center;
+}
+
+.trust-box i {
+    font-size: 42px;
+    font-weight: 100;
+}
+
+/* CAROUSEL COMUN */
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.boxside-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+.boxside-icon {
+    font-size: 50px;
+}
+.boxside-title {
+    margin: 0px;
+}
+.carousel-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.carousel-case {
+    width: 200px;
+    background-color: #F4F4F4;
+    text-align: center;
+    /* padding: 10px; */
+    position: relative;
+}
+.carousel-case h3, .carousel-case p {
+    margin: 10px 0px;
+}
+
+.carousel-case span {
+    text-decoration: line-through;
+}
+
+/* PROMOTII */
+#promotions {
+    background-color: #f0554d;
+}
+.discount {
+    background-color: #f0554d;
+    width: 25%;
+    height: 10%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NOUTATI */
+#news {
+    background-color: #287275;
+}
+
+/* RECOMANDARI */
+#recommendations {
+    background-color: #f5ceb1;
+}
+
+/* BOTTOMFOOTER */
+
+.bottom-section {
+    margin-bottom: 15px;
+}
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+.bottom-footer li {
+    padding-right: 0;
+    text-align: center;
+}
+.bottom-footer ul {
+    padding-left: 0;
+}
+.bottom-footer form {
+    text-align: center;
+}
+.bottom-footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.bottom-footer-socialicon{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+/* SI BOTTOMFOOTER SI FOOTER */
+
+ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-main ul {
+    padding-left: 0;
+}
+.footer-company {
+    display: flex;
+    flex-direction: column;
+}
+.footer-copyright p {
+    margin-bottom: 3px;
+}

@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: #F4F4F4;
+}
+img {
+    width: 100%;
+}
+/* PE TOT ECTRANUL */
+
+.imaginetest {
+    display: inline;
+    width: 330px;
+    height: 30px;
+}
+
+.containerleftright {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.header-logo img {
+    width: 100px;
+}
+.header-search {
+    display: flex;
+    justify-content: center;
+}
+.header-search input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid darkgray;
+    border-right: black;
+    padding: 4px 0px 4px 10px;
+    font-size: 12px;
+}
+.header-search button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.header-icon button {
+    border: none;
+    background-color: transparent;
+}
+.header-icon i {
+    font-size: 18px;
+}
+.header-icon i:hover {
+    color: darkgray;
+}
+.menu-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+li {
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: red;
+}
+
+/* ICON SERVICII */
+
+.trust {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 30px; */
+}
+.trust-box {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.trust-box p {
+    margin-left: 10px;
+}
+
+.trust-box div {
+    display: flex;
+    align-items: center;
+}
+
+.trust-box i {
+    font-size: 42px;
+    font-weight: 100;
+}
