@@ -63,7 +63,7 @@ header {
     font-size: 18px;
 }
 .header-icon i:hover {
-    color: darkgray;
+    color: darkred;
 }
 .menu-main {
     display: flex;

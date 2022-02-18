@@ -27,7 +27,7 @@ a {
     color: black
 }
 a:hover{
-    color: red;
+    color: darkred;
 }
 
 
@@ -41,6 +41,16 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     background-color: whitesmoke;
+}
+.bottom-footer input:last-child {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+.bottom-footer input:last-child:hover {
+    background-color: black;
 }
 .bottom-footer li {
     padding-right: 0;
