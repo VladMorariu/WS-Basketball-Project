@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                 <input type="text" name="lastname" size="42" placeholder="Nume" required>
                 <br>
                 <br>
-                <input type="tel" name="phone" size="42" placeholder="Telefon" required>
+                <input type="tel" name="phone" size="42" placeholder="Telefon" pattern="[0-9]{10}" required>
                 <input type="email" name="email" size="42" placeholder="E-mail" required>
                 <br>
                 <br>
