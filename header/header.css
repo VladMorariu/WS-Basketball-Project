@@ -84,7 +84,7 @@ a {
     color: black
 }
 a:hover{
-    color: red;
+    color: darkred;
 }
 
 /* ICON SERVICII */
@@ -99,6 +99,10 @@ a:hover{
     display: flex;
     flex-direction: row;
     text-align: center;
+}
+
+.trust-box:hover {
+    color: darkred;
 }
 
 .trust-box p {

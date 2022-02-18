@@ -7,18 +7,19 @@
 
 }
 .filter {
-    border: 1px solid red;
+    border: 1px solid darkred;
     width: 35%;
     height: 100%;
 }
-
+.filter button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
 .card {
     border: 2px solid green;
-}
-
-.card img {
-    width: 50%;
-    height: 50%;
 }
 
 .image-grid {
@@ -34,7 +35,18 @@
 }
 
 .marketing {
-    background-color: whitesmoke;
+    background-color: rgba(211, 211, 211, 0.274);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.marketing button {
+    height: 20%;
+    padding: 7px 20px;
+    border: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
 }
