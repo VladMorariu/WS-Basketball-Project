@@ -12,9 +12,4 @@ signupForm.addEventListener("submit", function (event) {
     let email = document.getElementById('email').value;
     localStorage.setItem(email, JSON.stringify(user));
     location.href="../shop-signin/signin.html"
-
-// Retrieve the object from storage
-var retrievedObject = localStorage.getItem(email);
-
-console.log('retrievedObject: ', JSON.parse(retrievedObject));
 });
