@@ -9,6 +9,7 @@
 .filter {
     width: 35%;
     height: 100%;
+    margin-right: 20px;
 }
 .filter button {
     background-color: darkred;
