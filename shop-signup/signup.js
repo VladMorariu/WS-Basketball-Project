@@ -18,6 +18,3 @@ var retrievedObject = localStorage.getItem(email);
 
 console.log('retrievedObject: ', JSON.parse(retrievedObject));
 });
-
-
-
