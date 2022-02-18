@@ -20,11 +20,12 @@
         </div>
         <div class="rightside-box">
             <img src="images/logo.png" alt="" width="50px">
-            <form action="" method="GET" target="_blank">
-                <input type="email" name="email" size="42" placeholder="E-mail" required>
+            <form id="signinForm" action="" method="GET" target="_blank">
+                <input id="email" type="email" name="email" size="42" placeholder="E-mail" required>
                 <br>
                 <br>
-                <input type="password" name="password" size="42" placeholder="Parola" required>
+                <input id="password" type="password" name="password" size="42" placeholder="Parola" required>
+                <p id="message">E-mail sau parola invalide!</p>
                 <br>
                 <div class="commands-box">
                     <input type="submit" value="Autentificare"> <br>
@@ -35,5 +36,6 @@
             </form>
         </div>
     </div>
+    <script src="signin.js"></script>
 </body>
 </html>
