@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
-    <script src="signup.js"></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -21,7 +20,7 @@
         </div>
         <div class="rightside-box">
             <img src="images/logo.png" alt="" width="50px">
-            <form action="" method="GET" target="_blank">
+            <form id="signupForm" action="" method="GET" target="_blank">
                 <input id="firstname" type="text" name="firstname" size="42" placeholder="Prenume" required>
                 <input id="lastname" type="text" name="lastname" size="42" placeholder="Nume" required>
                 <br>
@@ -30,12 +29,12 @@
                 <input id="email" type="email" name="email" size="42" placeholder="E-mail" required>
                 <br>
                 <br>
-                <input id="password" type="password" name="password" size="42" placeholder="Parola" required>
-                <input id="confpassword" type="password" name="confpassword" size="42" placeholder="Reintroduceți parola" required>
+                <input id="password" type="password" name="password" size="42" minlength="8" placeholder="Parola" required>
+                <input id="confpassword" type="password" name="confpassword" size="42" minlength="8" placeholder="Reintroduceți parola" required>
                 <br>
                 <br>
-                <input type="checkbox"> Doresc să primesc newsletter-ul săptămânal cu noutățile magazinului <br>
-                <input id="gdpr" type="checkbox"> Sunt de acord cu procesarea datelor personale conform Politicii de Confidențialitate <br>
+                <input id="news" type="checkbox"> Doresc să primesc newsletter-ul săptămânal cu noutățile magazinului <br>
+                <input id="gdpr" type="checkbox" required> Sunt de acord cu procesarea datelor personale conform Politicii de Confidențialitate <br>
                 <br>
                 <div class="commands-box">
                     <input id="signup-btn" type="submit" value="Creează cont"> <br>
@@ -46,5 +45,6 @@
             </form>
         </div>
     </div>
+    <script src="signup.js"></script>
 </body>
 </html>
