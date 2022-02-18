@@ -11,6 +11,11 @@
     height: 100%;
     margin-right: 20px;
 }
+
+.filter label {
+    font-weight: bold;
+    color: darkred;
+}
 .filter button {
     background-color: darkred;
     color: white;
