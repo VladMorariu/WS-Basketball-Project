@@ -11,7 +11,7 @@ let products = [{
     code: "0042342343", name: "Trening", category: "echipament", image: "images/echipament5.jpg", secondImage: "images/echipament5.5.jpg", new: true, recommended: true, price: 399, brand: "nike", color: "negru", gender: "baiat", discount: 30
 },
 {
-    code: "00452342343", name: "Echipament", category: "echipament", image: "images/echipament3.jpg", secondImage: "images/echipament3.3.jpg", new: true, recommended: false, price: 399, brand: "reebook", color: "alb", gender: "baiat", discount: 25
+    code: "00452342343", name: "Echipament", category: "echipament", image: "images/echipament3.jpg", secondImage: "images/echipament3.3.jpg", new: true, recommended: false, price: 399, brand: "jordan", color: "alb", gender: "baiat", discount: 25
 },
 {
     code: "00462342343", name: "Rucsac", category: "accesorii", image: "images/accesorii1.jpg", secondImage: "images/accesorii1.1.jpg", new: true, recommended: true, price: 399, brand: "nike", color: "negru", gender: "baiat", discount: 8

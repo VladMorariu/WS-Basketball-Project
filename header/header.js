@@ -2,7 +2,8 @@ let searchInput = document.getElementById("search-input");
 let searchBtn = document.getElementById("search-btn");
 searchBtn.addEventListener("click", function (event) {
     let searchValue = document.getElementById("search-input").value;
-    console.log(searchValue);
+    localStorage.setItem("search", JSON.stringify(searchValue));
+    location.href="../shop-productlist/productlist.html";
 });
 
 let loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
@@ -25,3 +26,4 @@ if(loggedUser) {
     let logoutBtn = document.getElementById('out-btn');
     logoutBtn.style.display = "none";
 }
+
