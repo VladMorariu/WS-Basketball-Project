@@ -1,3 +1,10 @@
+let searchInput = document.getElementById("search-input");
+let searchBtn = document.getElementById("search-btn");
+searchBtn.addEventListener("click", function (event) {
+    let searchValue = document.getElementById("search-input").value;
+    console.log(searchValue);
+});
+
 let loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
 if(loggedUser) {
     const p = document.createElement("p");

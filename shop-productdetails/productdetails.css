@@ -102,7 +102,7 @@ body {
     color: black;
 }
 .marketing {
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.274);;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
