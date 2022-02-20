@@ -24,9 +24,11 @@
                     <input type="text" size="50" placeholder="Caută în site...">
                     <button><i class="ri-search-line"></i></button>
                 </div>
-                <div class="header-icon">
-                    <a href="../shop-signup/signup.html"><button><i class="ri-account-circle-line"></i></button></a>
-                    <a href="../shop-signin/signin.html"><button><i class="ri-login-box-line"></i></button></a>
+                <div id="hicon" class="header-icon">
+                    <p id="hello"></p>
+                    <a id="reg-btn" href="../shop-signup/signup.html"><button><i class="ri-account-circle-line"></i></button></a>
+                    <a id="log-btn" href="../shop-signin/signin.html"><button><i class="ri-login-box-line"></i></button></a>
+                    <a id="out-btn" href="../shop-homepage/shop.html"><button><i class="ri-logout-box-line"></i></button></a>
                     <button><i class="ri-heart-line"></i></button>
                     <button><i class="ri-shopping-cart-line"></i></button>
                 </div>
@@ -91,9 +93,9 @@
                 <div class="filter">
                     <p>REZULTATE FILTRU</p>
                     <label for="brand">Marca</label> <br>
-                    <input type="checkbox" name="brand" value="adidas">Adidas <br>
-                    <input type="checkbox" name="brand" value="nike">Nike <br>
-                    <input type="checkbox" name="brand" value="reebook">Reebook <br>
+                    <input id="adidas" type="checkbox" name="brand" value="adidas">Adidas <br>
+                    <input id="nike" type="checkbox" name="brand" value="nike">Nike <br>
+                    <input id="reebook" type="checkbox" name="brand" value="reebook">Reebook <br>
                     <br>
                     <label for="color">Culoare</label> <br>
                     <input type="checkbox" name="color" value="negru">Negru <br>
@@ -286,5 +288,6 @@
             </footer>
         </section>
     </div>
+    <script src="../header/header.js"></script>
 </body>
 </html>

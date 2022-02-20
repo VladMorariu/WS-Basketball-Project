@@ -33,14 +33,12 @@ a:hover{
 
 /* BOTTOMFOOTER */
 
-.bottom-section {
-    margin-bottom: 15px;
-}
 .bottom-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: whitesmoke;
+    background-color: lightgray;
+    padding-bottom: 15px;
 }
 .bottom-footer input:last-child {
     background-color: darkred;
@@ -85,6 +83,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: darkgray;
 }
 .footer-main ul {
     padding-left: 0;

@@ -26,6 +26,8 @@ img {
     gap: 3px;
     margin-bottom: 30px;
     margin-top: 30px;
+    /* overflow: hidden; */
+    /* width: 1200px; */
 }
 .boxside-container{
     display: flex;
@@ -59,6 +61,19 @@ img {
 .carousel-case span {
     text-decoration: line-through;
 }
+
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 50em;
+}
+.inner {
+    display: flex;
+    transition: all 1s ease-in-out;
+  }
+
+
+
 
 /* PROMOTII */
 #promotions {
