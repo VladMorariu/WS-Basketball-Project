@@ -21,7 +21,7 @@ function addProduct(product) {
     let span = document.createElement("span");
     span.textContent = product.price + " RON";
     let p = document.createElement("p");
-    p.textContent = (product.price - product.discount / 100 * product.price) + " RON ";
+    p.textContent = Math.trunc(product.price - product.discount / 100 * product.price) + " RON ";
 
 
     cardDiv.appendChild(imgDiv);
@@ -36,21 +36,43 @@ function addProduct(product) {
     imageContainer.appendChild(cardDiv);
 
     cardDiv.addEventListener("click", function(event){
-        localStorage.setItem("selectedProduct", carouselDiv.id);
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
     });
 }
 
 let products = JSON.parse(localStorage.getItem("products"));
 let numberOfProducts = document.getElementById('browse-title');
+
+let category = JSON.parse(localStorage.getItem("category"));
 let searchValue = JSON.parse(localStorage.getItem("search"));
-if (searchValue === "") {
-    for (let product of products) {
+if(category) {
+    let filterProducts = products.filter(function(el) {
+        return el.category === category;
+    });
+    for (let product of filterProducts) {
         addProduct(product);
     }
-    numberOfProducts.textContent = "Rezultate cautare: " + products.length + " produse";
+    numberOfProducts.textContent = "Rezultate cautare pentru " + category + ": " + filterProducts.length + " produse";
+}
+
+if (searchValue === "") {
+    if (category === "") {
+        for (let product of products) {
+            addProduct(product);
+        }
+        numberOfProducts.textContent = "Rezultate cautare: " + products.length + " produse";
+    }
+
 } else {
     let searchInput = document.getElementById("search-input");
     searchInput.value = searchValue;
+
+    // Clear loaded products
+    let cardsParent = document.getElementById("image-grid");
+    while (cardsParent.firstChild) {
+        cardsParent.firstChild.remove()
+    }
+
     let filterProducts = products.filter(function(el) {
         return el.brand === searchValue.toLowerCase();
     });
@@ -59,7 +81,7 @@ if (searchValue === "") {
     }
     numberOfProducts.textContent = "Rezultate cautare pentru " + searchValue + ": " + filterProducts.length + " produse";
 
-    let checkbox = document.getElementById(searchValue);
+    let checkbox = document.getElementById(searchValue.toLowerCase());
     if(checkbox) {
         checkbox.checked = true;
     }
@@ -67,6 +89,9 @@ if (searchValue === "") {
 
 let filterBtn = document.getElementById("filter-btn");
 filterBtn.addEventListener("click", function(event) {
+    let searchInput = document.getElementById("search-input");
+    searchInput.value = "";
+
     let brandFilters = [];
     let brandInputs = document.querySelectorAll('input[name="brand"]');
     for (let input of brandInputs) {
@@ -121,4 +146,25 @@ filterBtn.addEventListener("click", function(event) {
 });
 
 
+let allProducts = document.getElementById('all-products');
+allProducts.addEventListener("click", function(event){
+    localStorage.setItem('search', JSON.stringify(''));
+    localStorage.setItem('category', JSON.stringify(''));
+});
 
+let equipments = document.getElementById('equipments');
+equipments.addEventListener("click", function(event){
+    localStorage.setItem('category', JSON.stringify('echipamente'));
+    localStorage.setItem('search', JSON.stringify(''));
+});
+
+let accessories = document.getElementById('accessories');
+accessories.addEventListener("click", function(event){
+    localStorage.setItem('category', JSON.stringify('accesorii'));
+    localStorage.setItem('search', JSON.stringify(''));
+});
+
+let sort = document.getElementById("sort");
+sort.addEventListener('change', (event) => {
+    console.log(event.target.value);
+});

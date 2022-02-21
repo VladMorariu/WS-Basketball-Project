@@ -30,17 +30,17 @@
                     <a id="log-btn" href="../shop-signin/signin.html"><button><i class="ri-login-box-line"></i></button></a>
                     <a id="out-btn" href="../shop-homepage/shop.html"><button><i class="ri-logout-box-line"></i></button></a>
                     <button><i class="ri-heart-line"></i></button>
-                    <button><i class="ri-shopping-cart-line"></i></button>
+                    <button><i class="ri-shopping-cart-line"></i><span id="cart-number">0</span></button>
                 </div>
             </header>
             <div class="menu-main">
                 <nav >
                     <ul class="menu-list">
-                        <li><a href="">ECHIPAMENTE</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="equipments">ECHIPAMENTE</a></li>
                         <li><a href="">ÎNCĂLȚĂMINTE</a></li>
-                        <li><a href="">ACCESORII</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="accessories">ACCESORII</a></li>
                         <li><a href="">SUVENIRURI</a></li>
-                        <li><a href="../shop-productlist/productlist.html">TOATE</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="all-products">TOATE</a></li>
                     </ul>
                 </nav>
             </div>
@@ -88,7 +88,6 @@
         <section>
             <div class="boxes">
                 <div class="filter">
-                    <p>REZULTATE FILTRU</p>
                     <label for="brand">Marca</label> <br>
                     <input id="adidas" type="checkbox" name="brand" value="adidas">Adidas <br>
                     <input id="nike" type="checkbox" name="brand" value="nike">Nike <br>
@@ -109,6 +108,14 @@
                 <div>
                     <div class="browsing">
                         <p id="browse-title">Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="measure">
+                        <label for="sort">Sortează după: </label>
+                        <select name="sort" id="sort">
+                            <option value="none"></option>
+                            <option value="up">Pret crescator</option>
+                            <option value="down">Pret descrescator</option>
+                          </select>
                     </div>
                     <div id="image-grid" class="image-grid">
                     </div>

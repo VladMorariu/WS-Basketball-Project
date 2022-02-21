@@ -17,7 +17,7 @@ function addProduct(product, carousel) {
     let span = document.createElement("span");
     span.textContent = product.price + " RON";
     let p = document.createElement("p");
-    p.textContent = (product.price - product.discount / 100 * product.price) + " RON ";
+    p.textContent = Math.trunc(product.price - product.discount / 100 * product.price) + " RON ";
 
     if(product.discount > 0) {
         carouselDiv.appendChild(discountDiv);
@@ -33,8 +33,7 @@ function addProduct(product, carousel) {
     carousel.appendChild(carouselDiv);
 
     carouselDiv.addEventListener("click", function(event){
-        localStorage.setItem("selectedProduct", carouselDiv.id);
-        // location.href = "../shop-productdetails/productdetails.html";
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
     });
 }
 
@@ -181,4 +180,23 @@ rightArrowRecomm.addEventListener("click", function(event){
         toLeftRecomm--;
     }
 });
+
+let allProducts = document.getElementById('all-products');
+allProducts.addEventListener("click", function(event){
+    localStorage.setItem('search', JSON.stringify(''));
+    localStorage.setItem('category', JSON.stringify(''));
+});
+
+let equipments = document.getElementById('equipments');
+equipments.addEventListener("click", function(event){
+    localStorage.setItem('category', JSON.stringify('echipamente'));
+    localStorage.setItem('search', JSON.stringify(''));
+});
+
+let accessories = document.getElementById('accessories');
+accessories.addEventListener("click", function(event){
+    localStorage.setItem('category', JSON.stringify('accesorii'));
+    localStorage.setItem('search', JSON.stringify(''));
+});
+
 

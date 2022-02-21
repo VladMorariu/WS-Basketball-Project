@@ -32,6 +32,12 @@
     width: 20%;  
 }
 
+.social-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 .rightside-box {
     display: flex;
     flex-direction: column;
@@ -54,10 +60,10 @@ input:not([type='submit']) {
 }
 
 input[type='submit'] {
-    background-color: rgb(85, 202, 50);
+    background-color: darkred;
     height: 36px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 0 32px;
     margin: 20px;
     font-size: 18px;
@@ -65,7 +71,7 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover{
-    background-image: linear-gradient(rgb(121, 188, 100), rgb(87, 136, 67));
+    background-image: linear-gradient(rgb(188, 100, 100), rgb(136, 67, 67));
 }
 
 .commands-box {
@@ -76,7 +82,7 @@ input[type='submit']:hover{
 }
 
 #member {
-    color: rgb(85, 202, 50);
+    color: white;
 }
 
 h2 {

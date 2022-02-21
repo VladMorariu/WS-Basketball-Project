@@ -10,6 +10,7 @@
     width: 15%;
     height: 100%;
     margin-right: 20px;
+    margin-top: 25px;
 }
 
 .filter label {
@@ -24,6 +25,9 @@
     padding: 5px 10px;
 }
 
+#sort {
+    margin-bottom: 20px;
+}
 .image-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;

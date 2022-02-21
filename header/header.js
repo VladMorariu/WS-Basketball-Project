@@ -17,10 +17,15 @@ if(loggedUser) {
     let loginBtn = document.getElementById('log-btn');
     registerBtn.style.display = "none";
     loginBtn.style.display = "none";
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cartNumber = document.getElementById('cart-number');
+    console.log(cartNumber.textContent);
+    cartNumber.textContent = cart; 
     let logoutBtn = document.getElementById('out-btn');
     logoutBtn.addEventListener("click", function (event) {
         let user = {};
-        localStorage.setItem("loggedUser", JSON.stringify(user));
+        localStorage.setItem("loggedUser", {});
+        localStorage.setItem("cart", JSON.stringify(0));
     });
 } else {
     let logoutBtn = document.getElementById('out-btn');

@@ -30,17 +30,17 @@
                     <a id="log-btn" href="../shop-signin/signin.html"><button><i class="ri-login-box-line"></i></button></a>
                     <a id="out-btn" href="../shop-homepage/shop.html"><button><i class="ri-logout-box-line"></i></button></a>
                     <button><i class="ri-heart-line"></i></button>
-                    <button><i class="ri-shopping-cart-line"></i></button>
+                    <button><i class="ri-shopping-cart-line"></i><span id="cart-number">0</span></button>
                 </div>
             </header>
             <div class="menu-main">
                 <nav >
                     <ul class="menu-list">
-                        <li><a href="">ECHIPAMENTE</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="equipments">ECHIPAMENTE</a></li>
                         <li><a href="">ÎNCĂLȚĂMINTE</a></li>
-                        <li><a href="">ACCESORII</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="accessories">ACCESORII</a></li>
                         <li><a href="">SUVENIRURI</a></li>
-                        <li><a href="../shop-productlist/productlist.html">TOATE</a></li>
+                        <li><a href="../shop-productlist/productlist.html" id="all-products">TOATE</a></li>
                     </ul>
                 </nav>
             </div>
@@ -85,31 +85,24 @@
                 </div>
             </div>
         </section>
-        <hr>
 <!-- Aici incepe sectiunea de breadcrumbs menu -->
-        <section>breadcrumbs menu</section>
-        <hr>
+        <section id="breadcrumbs"></section>
         <div class="main-product">
             <div class="image-product">
                 <div id="big-image">
-                    <img src="images/echipament1.jpg" alt="">
                 </div>
-                <div class="other-images">
-                    <img src="images/echipament2.jpg" alt="">
-                    <img src="images/echipament3.jpg" alt="">
-                    <img src="images/echipament4.jpg" alt="">
-                    <img src="images/echipament5.jpg" alt="">
+                <div id="other" class="other-images">
                 </div>
             </div>
             <div class="info-box">
                 <div class="cart">
-                    <h2>Product Name</h2>
+                    <h2 id="name">Product Name</h2>
                     <div class="price-counter">
-                        <p>300RON</p>
-                        <input type="number" min="1" max="5" value="1" size="7">
+                        <p id="price">300RON</p>
+                        <input id="number-of-products" type="number" min="1" max="5" value="1" size="7">
                     </div>
                     <div class="measure">
-                        <label for="measure">Marime</label> <br>
+                        <label for="measure">Mărime</label> <br>
                         <select name="measure" id="measure" required>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
@@ -118,44 +111,47 @@
                             <option value="XL">XL</option>
                           </select>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button id="add-cart">Adaugă în coș</button>
                 </div>
                 <div class="description">
-                    <a href="#details"><p>Details</p></a>
-                    <a href="#info-stats"><p>Info & Stats</p></a>
+                    <a href="#details"><p>Detalii</p></a>
+                    <a href="#info-stats"><p>Informații</p></a>
                 </div>
             </div>
         </div>
         <section class="details-product">
-            <h3 id="details">Details</h3>
+            <h3 id="details">Detalii</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, fugiat, quod qui assumenda quibusdam accusamus ipsum nemo recusandae quidem placeat rem facere quas cupiditate sint. Molestiae vitae iste ducimus inventore in id iusto eius velit ipsa? Perspiciatis, deserunt exercitationem est vero praesentium ab dolores ipsum quaerat iusto ullam, repellendus earum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt, magni blanditiis a, aspernatur voluptatum tenetur ducimus, facere nesciunt veritatis odio. A, provident. Quae repellat fugiat neque ipsum odit dignissimos, nesciunt velit at laboriosam expedita, provident beatae temporibus labore saepe mollitia aliquam omnis, ea aperiam! Hic eos minus commodi ipsam maxime laudantium, incidunt nesciunt obcaecati temporibus necessitatibus reprehenderit vitae, nihil non cum. Optio, nam ad. Quos quis minima alias illum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis nemo iste cum fugit, quae natus deleniti corrupti sequi aliquid, ullam odio, unde consequuntur quibusdam expedita explicabo necessitatibus. Debitis laborum at nulla mollitia eos et accusamus alias dolore doloremque aperiam laboriosam laudantium modi culpa sit quasi ipsum accusantium eveniet illo, fuga beatae. Inventore excepturi temporibus ipsam dolore quo. Sed voluptatibus adipisci veritatis, atque autem, officiis labore quis ducimus quia nisi officia. Ea magni officiis impedit sapiente. Mollitia illum asperiores natus eius aliquid ratione nisi! Culpa maiores sed sit recusandae quam commodi ducimus quisquam, dolore consequuntur amet vitae, omnis excepturi odio!</p>
         </section>
         <section class="table-product">
-            <h3 id="info-stats">Info & Stats</h3>
-            <p>INFO</p>
-            <table border "1">
+            <h3 id="info-stats">Informații</h3>
+            <table border "2">
                 <tbody>
                     <tr>
                         <td>Cod Produs</td>
-                        <td>0014322323</td>
+                        <td id="code">0014322323</td>
                     </tr>
                     <tr>
-                        <td>Cod Produs</td>
-                        <td>0022324432</td>
+                        <td>Categorie</td>
+                        <td id="category">0022324432</td>
                     </tr>
                     <tr>
-                        <td>Cod Produs</td>
-                        <td>0032342343</td>
+                        <td>Brand</td>
+                        <td id="brand">0032342343</td>
                     </tr>
                     <tr>
-                        <td>Cod Produs</td>
-                        <td>0042342343</td>
+                        <td>Promotie</td>
+                        <td id="promo">0042342343</td>
                     </tr>
                     <tr>
-                        <td>Cod Produs</td>
-                        <td>0054323243</td>
+                        <td>Noutate</td>
+                        <td id="news">0054323243</td>
+                    </tr>
+                    <tr>
+                        <td>Recomandare</td>
+                        <td id="recomm">0054323243</td>
                     </tr>
                 </tbody>
             </table>
@@ -163,8 +159,8 @@
         </section>
         <section>
             <div class="marketing">
-                <h3>Inregistreaza-te acum si primesti 30% reducere la prima comanda!</h3>
-                <button>Inregistreaza-te</button>
+                <h3>Inregistrează-te acum și primești 30% reducere la prima comandă!</h3>
+                <a href="../shop-signup/signup.html"><button>Înregistrează-te</button></a>
             </div>
         </section>
         <footer>
@@ -178,7 +174,7 @@
                         </ul>
                         <form action="">
                             <input type="text" placeholder="Adresa de email">
-                            <input type="submit" value="Aboneaza-te">
+                            <input type="submit" value="Abonează-te">
                         </form>
                     </div>
                     <div>
@@ -249,6 +245,7 @@
             </section>
         </footer>
     </div>
+    <script src="../shop-productdetails/productdetails.js"></script>
     <script src="../header/header.js"></script>
 </body>
 </html>
